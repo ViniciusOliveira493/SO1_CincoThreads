@@ -1,15 +1,14 @@
 package controller;
 
 public class ThreadNumero extends Thread{
-	int numero;
-	public ThreadNumero(int numero) {
-		super();
-		this.numero = numero;
-	}
 	
+	public ThreadNumero() {
+		super();
+	}
+
 	@Override
 	public void run() {
-		System.out.println(this.numero);
+		System.out.println("TID #" + getId());
 	}
 	
 }
